@@ -1,0 +1,77 @@
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+  color: #222;
+  margin: 0;
+  padding: 0 20px 40px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+h2 { color: #b30000; margin-top: 24px; }
+h3 { color: #ff0000; }
+a { color: #fa0101; font-weight: bold; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* barra do topo */
+.topo, nav {
+  background: #f40000;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 0 -20px 20px;
+  border-radius: 0 0 8px 8px;
+}
+.topo a, nav a { color: #fff; margin: 0 6px; }
+
+/* formulários */
+form {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+  margin-bottom: 20px;
+}
+form br { display: none; }
+input, select {
+  display: block;
+  width: 100%;
+  padding: 9px;
+  margin: 4px 0 12px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+button { 
+  background: #bc0303;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover { background: #f70101; }
+
+/* tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+}
+th { background: #f50000; color: #fff; text-align: left; }
+th, td { padding: 10px; border-bottom: 1px solid #e3e3e3; }
+tr:hover td { background: #f5f8ff; }
+
+/* mensagens */
+.aviso { background: #fff3cd; padding: 10px; border-radius: 4px; }
+.erro  { background: #fde2e2; color: #b00020; padding: 10px; border-radius: 4px; }
+
+/* página de login */
+body.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body.login form { width: 600px; }
